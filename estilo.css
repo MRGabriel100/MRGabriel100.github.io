@@ -52,10 +52,6 @@ h1, h2, h3, h4, p{
     align-items: center;
     justify-items: center;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
 
 .place-self-start{
     place-self: start;
@@ -104,3 +100,17 @@ li a{
     color: white;
 }
 
+
+@media (max-width: 768px){
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width:769px){
+    .grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
