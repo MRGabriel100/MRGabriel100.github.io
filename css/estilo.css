@@ -1,0 +1,568 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+    display: grid;
+    grid-template-areas: "header header" "produtos produtos" "login login" "footer footer";
+
+}
+
+.grid {
+
+    display: grid;
+    grid-template-areas: "prod_img prod_dados" "mais_prod mais_prod" "carrinho carrinho";
+    margin: 80px 150px 0 150px;
+}
+
+.prod_img {
+
+    grid-area: prod_img;
+   max-width: 500px;
+   
+}
+
+.prod_dados {
+
+    grid-area: prod_dados;
+    max-width: 400px;
+}
+
+.carrinho {
+
+    grid-area: carrinho;
+    margin-bottom: 40px;
+
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgb(151, 151, 151);
+    height: 150px;
+}
+
+.header a, .header a:visited {
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.login {
+
+    grid-area: login;
+    height: 400px;
+}
+
+.login form{
+
+    display: inline-block;
+    height: 200px;
+}
+
+.login input {
+
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+
+}
+
+.login button {
+
+    width: 310px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login a:visited {
+
+    color: blue;
+}
+
+.login h2 {
+
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    color: rgb(54, 54, 54);
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+
+.infos a{
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 5px;
+
+}
+.produtos{
+    grid-area: produtos;
+
+}
+
+.produtos .espaco div {
+
+    margin: 20px 30px;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(82, 82, 82);
+    height: 140px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.justify-content-start{
+
+    justify-content: start;
+}
+
+.justify-content-center{
+
+    justify-content: center;
+}
+
+.justify-content-end{
+    
+    justify-content: flex-end;
+}
+
+.justify-content-around{
+    justify-content: space-around;
+}
+
+
+.align-items-center {
+    align-items: center;
+}
+
+ul{
+    padding: 0;
+}
+
+.prod_box {
+
+    margin: 0;
+}
+
+.ver_mais p{
+
+    display: inline-block;
+    border-radius: 5px;
+    width: 230px;
+    margin: 130px 10px;
+    padding: 10px 0 !important;
+    filter: opacity(40%);
+    background-color: black;
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    font-size: 18pt;
+  
+  }
+
+.prod_box > div{
+
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    box-shadow: 2px 2px 5px 2px rgb(104, 104, 104);
+}
+
+.prod_box > div > p {
+    margin: 0;
+
+    height: 0;
+
+}
+.prod_box > div:hover > p {
+
+    display: inline-block;
+    border-radius: 5px;
+    width: 250px;
+    height: 20px;
+    margin: 0;
+    padding: 10px 0 !important;
+    filter: opacity(40%);
+    background-color: black;
+    color: white;
+    position: absolute;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.teste, .teste2 {
+
+    visibility: hidden;
+    position: relative;
+    height: 0;
+    margin: 0;
+
+}
+
+.teste2 {
+
+    margin-left: 125px;
+}
+
+.prod_box > div:hover .teste {
+
+    visibility: visible;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    width: 125px;
+    height: 60px;
+
+    position: absolute;
+    bottom: 0;
+
+    background-color: rgb(141, 35, 35, 0.8);
+   
+
+    border-radius: 5px 0 0 5px;
+    transition: 0.3s;
+}
+
+
+.prod_box > div:hover .teste2 {
+
+    visibility: visible;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    width: 125px;
+    height: 60px;
+
+    position: absolute;
+    bottom: 0;
+   margin-left: 125px;
+
+    background-color: rgb(66, 66, 66, 0.8);
+  
+
+    border-radius: 0 5px 5px 0;
+
+    transition: 0.3s;
+}
+
+.prod_box img {
+
+    border-radius: 5px;
+}
+
+.prod_box2{
+
+    height: 300px;
+    width: 250px;
+    background-color: rgb(114, 114, 114);
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+
+#mais_vend, #camisetas, #moletons {
+    padding-top: 40px;
+}
+
+#mais_vend > p, #camisetas > p, #moletons > p{
+    padding-left: 140px;
+}
+
+#moletons{
+    padding: 40px 0;
+}
+
+.header .flex li{
+    color: rgb(0, 0, 0);
+    padding: 0 20px;
+    font-size: 16pt;
+} 
+
+.header ul{
+    margin: 0;
+    height: 130px;
+    list-style: none;
+}
+
+.submenu{
+
+    display: none;
+}
+
+.menu li {
+
+    position: relative;
+}
+.menu li:hover .submenu{
+    display: block;
+    position: absolute;
+    clear: both;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgb(131, 131, 131);
+    width: 150px;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    right: 0px;
+
+    z-index: 10;
+}
+
+.header .submenu li {
+    padding: 10px 0;
+}
+
+.menu2{
+    padding-right: 0px !important;
+}
+
+.menu2 li:hover .submenu {
+
+    display: block;
+    position: absolute;
+    clear: both;
+    background-color: rgb(70, 70, 70);
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 1;
+}
+.menu2 p, .menu2 a{
+
+    font-size: 12pt;
+}
+
+
+.menu2 .submenu li{
+
+    padding: 5px 0 !important;
+    font-size: 14pt !important;
+}
+.footer a {
+
+    display: block;
+    margin: 5px 0;
+}
+
+.all {
+
+    margin: 0 120px;
+}
+
+.infos{
+
+    height: 20px;
+   
+}
+
+.infos p {
+    color: white;
+    display: inline-block;
+
+}
+
+.perfil {
+
+    margin: 20px 155px;
+}
+
+/* Página unica do produto */
+
+.prod_dados h2 {
+
+    margin-top: 0;
+}
+
+.prod_dados button {
+
+    background-color: rgb(226, 8, 8);
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.prod_dados button:active{
+
+    background-color: rgb(156, 0, 0);
+}
+
+.prod_dados h1 {
+
+    margin-top: 0;
+}
+
+.prod_dados h2{
+
+    margin: 50px 0;
+}
+
+.prod_dados p {
+
+    margin: 50px 0;
+    width: 368px;
+    height: 115px;
+    padding: 10px;
+}
+
+.prod_img img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.mais_prod {
+
+    grid-area: mais_prod;
+    margin: 0 0 40px 0;
+}
+
+.prods {
+
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    height: 220px;
+}
+
+.prods img {
+
+    margin: 10px 0;
+    border-radius: 5px;
+    
+}
+
+
+.carrinho > div {
+
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.carrinho h3, .carrinho h2 {
+
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.carrinho P {
+
+    margin-right: 10px;
+}
+.car_dados {
+
+    display: inline-block;
+    position: absolute;
+    margin: 10px 0 10px 10px;
+    height: 92%;
+}
+
+.car_dados button {
+
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(219, 2, 2);
+    color: white;
+    border-radius: 5px;    
+    padding: 5px;
+}
+
+.car_dados button:active {
+
+    background-color: rgb(116, 19, 19);
+}
+
+.carrinho > form button {
+    margin: 10px 10px;
+    background-color: rgb(9, 240, 9);
+    color: rgb(48, 48, 48);
+    border-radius: 5px;
+    height: 50px;
+}
+
+.carrinho > form button:active {
+
+    background-color: green;
+    color: white;
+}
+
+.form input {
+
+    display: inline-block;
+    height: 30px;
+    margin: 10px;
+    padding-left: 10px;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+
+}
+
+.form button {
+
+    width: 100px;
+    height: 30px;
+    background-color: rgb(9, 240, 9);
+    border-radius: 5px;
+    font-size: 16pt;
+}
+
+.cad_prod {
+
+    margin-bottom: 80px;
+}
+
+.cad_prod input {
+
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(202, 202, 202);
+    padding: 10px;
+}
+
+.cad_prod #enviar {
+
+    background-color: rgb(9, 240, 9);
+    font-size: 14pt;
+    
+}
+
+@media only screen and (min-width: 820px) and (max-width:1024px){
+
+
+.produtos {
+
+    margin: 0 120px;
+}
+
+.grid {
+
+    display: grid;
+    grid-template-areas: "prod_img prod_dados" "mais_prod mais_prod" "carrinho carrinho";
+    margin: 80px 150px 0 150px;
+}
+
+}
